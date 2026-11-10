@@ -22,7 +22,7 @@ export default function App() {
         <Contact />
       </main>
       <footer className="border-t border-border py-8 text-center font-mono text-xs text-muted-foreground">
-        <p>Construido con React + TypeScript + Tailwind · Jose (Pepe) © 2025</p>
+        <p>Construido con React + TypeScript + Tailwind · José (Pepe)</p>
       </footer>
     </div>
   )

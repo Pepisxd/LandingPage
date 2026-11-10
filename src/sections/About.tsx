@@ -5,12 +5,12 @@ import { Code2, Cpu, GraduationCap, MapPin, Languages } from 'lucide-react'
 const facts = [
   {
     icon: GraduationCap,
-    text: 'B.Sc. Computer Science Engineering — CUCEI, UdeG (egreso jun. 2026)',
+    text: 'Ingeniería en Computación — CUCEI, UdeG (materias concluidas en junio de 2026)',
   },
   { icon: MapPin, text: 'Guadalajara, Jalisco, MX' },
   { icon: Cpu, text: 'Test Technician en Sanmina SCI (feb. 2025 — presente)' },
-  { icon: Code2, text: '4 proyectos full-stack · Inglés intermedio' },
-  { icon: Languages, text: 'Inglés intermedio' },
+  { icon: Code2, text: 'Desarrollo full-stack y automatización en producción' },
+  { icon: Languages, text: 'Inglés B2 · Español nativo' },
 ]
 
 export function About() {
@@ -36,15 +36,14 @@ export function About() {
             transition={{ delay: 0.2, duration: 0.6 }}
           >
             <p className="text-muted-foreground mb-6 font-mono leading-relaxed">
-              Estudiante de Ingenieria en Informática en CUCEI (UdeG) con experiencia real en
-              entornos de producción en Sanmina, desarrollando scripts de automatización Python y
-              trabajando con sistemas MES industriales.
+              Egresado de Ingeniería en Computación de CUCEI (UdeG). En Sanmina he desarrollado
+              software para operaciones reales, desde un sistema de asistencia sin conexión hasta
+              automatizaciones en Python para estaciones de inspección.
             </p>
             <p className="text-muted-foreground mb-6 font-mono leading-relaxed">
               He desarrollado aplicaciones full-stack utilizando principalmente React, Node.js y
-              MongoDB, integrando soluciones de inteligencia artificial para diferentes proyectos.
-              Experiencia diseñando APIs, trabajando con bases de datos y construyendo aplicaciones
-              escalables orientadas a resolver problemas reales.
+              bases de datos SQL y MongoDB. También he integrado herramientas de inteligencia
+              artificial en proyectos universitarios y utilizado agentes de programación como apoyo.
             </p>
 
             <p className="text-muted-foreground font-mono leading-relaxed">

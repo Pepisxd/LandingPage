@@ -7,14 +7,14 @@ const titleWords = ['Hola,', 'soy', 'Jose', '(Pepe)']
 
 export function Hero() {
   return (
-    <section className="min-h-screen flex flex-col items-center justify-center text-center px-4 py-24">
+    <section className="min-h-[min(100svh,880px)] flex flex-col items-center justify-center text-center px-5 pt-28 pb-20">
 
       {/* Avatar */}
       <motion.div
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.5 }}
-        className="mb-8 relative"
+        className="mb-6 relative"
       >
         <div className="w-24 h-24 rounded-full overflow-hidden border-2 border-emerald-400/50 ring-4 ring-emerald-400/10">
           <img
@@ -46,7 +46,7 @@ export function Hero() {
         initial={{ filter: 'blur(10px)', opacity: 0, y: 30 }}
         animate={{ filter: 'blur(0px)', opacity: 1, y: 0 }}
         transition={{ duration: 0.7 }}
-        className="font-mono text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold leading-tight mb-4"
+        className="font-mono text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold leading-tight tracking-tight mb-4 text-balance"
       >
         {titleWords.map((word, i) => (
           <motion.span
@@ -65,11 +65,11 @@ export function Hero() {
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.7, duration: 0.6 }}
-        className="font-mono text-lg md:text-xl text-muted-foreground max-w-2xl mt-4 mb-12"
+        className="font-mono text-base md:text-xl text-muted-foreground max-w-2xl mt-4 mb-10 leading-relaxed"
       >
-        CS Engineer · Full-Stack Developer
+        Software Developer · Full-Stack
         <br />
-        <span className="text-sm opacity-70">CUCEI, Universidad de Guadalajara — egreso est. jun. 2026</span>
+        <span className="text-sm">CUCEI, Universidad de Guadalajara — carrera concluida en junio de 2026</span>
       </motion.p>
 
       <motion.div
@@ -107,6 +107,7 @@ export function Hero() {
       >
         <a
           href="https://github.com/pepisxd"
+          aria-label="GitHub de José"
           target="_blank"
           rel="noopener noreferrer"
           className="text-muted-foreground hover:text-foreground transition-colors"
@@ -115,6 +116,7 @@ export function Hero() {
         </a>
         <a
           href="https://linkedin.com/in/pepisxd"
+          aria-label="LinkedIn de José"
           target="_blank"
           rel="noopener noreferrer"
           className="text-muted-foreground hover:text-foreground transition-colors"
@@ -123,6 +125,7 @@ export function Hero() {
         </a>
         <a
           href="mailto:josealbertoorpp@gmail.com"
+          aria-label="Enviar correo a José"
           className="text-muted-foreground hover:text-foreground transition-colors"
         >
           <FaEnvelope className="w-5 h-5" />

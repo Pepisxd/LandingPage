@@ -6,17 +6,18 @@ export const experience: Experience[] = [
     role: 'Test Technician',
     period: 'Feb. 2025 — Presente',
     bullets: [
-      'Desarrollo de scripts Python para automatizar flujos de trabajo en entorno de producción',
+      'Desarrollé TIMEGATE, un sistema de asistencia offline en producción para 45 colaboradores',
+      'Codesarrollé respaldos automáticos en Python para aproximadamente 40 estaciones de inspección',
       'Pruebas funcionales y eléctricas en tarjetas electrónicas, documentando resultados y reportes de falla',
       'Operación de sistemas MES y programación de equipos AOI/AXI para control de calidad',
     ],
   },
   {
     company: 'Litoprint',
-    role: 'IT Support / Desarrollador Web',
+    role: 'IT Technician / Application Support',
     period: '2024 — 2025',
     bullets: [
-      'Mantenimiento de sistema interno en PHP/Laravel utilizado por 25+ empleados',
+      'Mantenimiento de sistema PHP/Laravel utilizado por más de 25 empleados mediante pull requests revisados',
       'Soporte de base de datos SQL y mantenimiento de infraestructura IT',
     ],
   },

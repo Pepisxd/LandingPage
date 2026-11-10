@@ -2,52 +2,30 @@ import type { Project } from '@/types'
 
 export const projects: Project[] = [
   {
-    title: 'LearnJN',
-    description:
-      'Plataforma educativa full-stack para practicar Python con ejercicios generados por IA. Integra Jupyter Notebooks con OpenAI API para generación inteligente de contenido.',
-    stack: ['React', 'TypeScript', 'Node.js', 'MongoDB', 'OpenAI API'],
-    highlights: [
-      'Ejercicios de código generados dinámicamente con IA',
-      'Auth JWT restringido a @alumnos.udg.mx vía Brevo',
-      'Deploy distribuido: Vercel (frontend) + Railway (backend)',
-      'Arquitectura distribuida en la nube con Cloudflare R2',
-    ],
-    github: 'https://github.com/Pepisxd',
+    title: 'TIMEGATE — control de asistencia',
+    description: 'Sistema de asistencia biométrica sin conexión, desarrollado para una operación de producción en Sanmina.',
+    stack: ['Next.js', 'TypeScript', 'SQLite', 'C# / .NET', 'Docker'],
+    highlights: ['Uso por 45 colaboradores y aproximadamente 90 registros diarios', 'Reglas de turnos, horas extra y aprobación administrativa', 'Migraciones probadas en un equipo espejo y respaldos cifrados'],
   },
   {
-    title: 'Pediatric Clinic System',
-    description:
-      'Aplicación multi-rol para gestión médica y de pacientes. Implementa predicción de enfermedades a partir de síntomas con IA usando Python y backend SQL.',
-    stack: ['React', 'Python', 'SQL', 'Machine Learning'],
-    highlights: [
-      'Sistema de roles para médicos y personal administrativo',
-      'Predicción de enfermedades con ML a partir de síntomas',
-      'Gestión completa de expedientes de pacientes',
-    ],
-    github: 'https://github.com/Pepisxd',
+    title: 'LearnJN — plataforma educativa',
+    description: 'Plataforma full-stack para un curso universitario de Jupyter Notebook, con contenidos y ejercicios apoyados por IA.',
+    stack: ['React', 'TypeScript', 'Node.js', 'MongoDB', 'IA'],
+    highlights: ['6 capítulos, 13 lecciones en video y panel de administración', 'Autenticación, verificación de correo y rutas protegidas', 'Modelo Qwen3 ajustado con LoRA para ejercicios'],
+    demo: 'https://jupyter-course.vercel.app',
+    github: 'https://github.com/Pepisxd/jupyter-course',
   },
   {
-    title: 'Sportify',
-    description:
-      'Web app móvil de análisis deportivo con integración REST API para datos en tiempo real. Predicciones de resultados de partidos con ML.',
-    stack: ['React', 'REST API', 'Machine Learning', 'JavaScript'],
-    highlights: [
-      'Datos deportivos en tiempo real vía REST API',
-      'Autenticación de usuarios',
-      'Predicciones de partidos con modelos ML',
-    ],
-    github: 'https://github.com/Pepisxd',
+    title: 'Sistema de clínica pediátrica',
+    description: 'Proyecto universitario para administrar citas, expedientes y acceso por roles.',
+    stack: ['React', 'Python', 'SQL'],
+    highlights: ['Flujos de citas y expedientes médicos', 'Acceso por roles para el personal', 'Base de datos relacional en tercera forma normal'],
+    github: 'https://github.com/Pepisxd/clinica_pediatra',
   },
   {
-    title: 'Sistema de Mantenimiento — Sanmina',
-    description:
-      'Sistema web interno para gestión de mantenimiento del departamento de pruebas. Digitaliza checklists, historial y evidencia fotográfica de equipos.',
-    stack: ['React', 'TypeScript', 'Node.js', 'Express', 'MongoDB'],
-    highlights: [
-      'Checklists por equipo con historial completo',
-      'Tracking de técnicos y asignación de tareas',
-      'Carga de evidencia fotográfica',
-      'Complementa sistema corporativo existente',
-    ],
+    title: 'Mantenimiento de equipos — Sanmina',
+    description: 'Aplicación interna desarrollada en equipo para gestionar mantenimiento y seguimiento de equipos.',
+    stack: ['Aplicación web', 'Mantenimiento', 'Producción'],
+    highlights: ['Aplicación en producción para 13 máquinas', 'Listas de verificación e historial de equipos', 'Proyecto aprobado por el comité Kaizen'],
   },
 ]

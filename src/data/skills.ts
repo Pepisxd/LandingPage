@@ -15,11 +15,11 @@ export const skills: SkillCategory[] = [
   },
   {
     category: 'Bases de datos',
-    skills: ['MongoDB', 'SQL', 'MySQL'],
+    skills: ['MongoDB', 'SQLite', 'PostgreSQL', 'MySQL'],
   },
   {
     category: 'IA / ML',
-    skills: ['Fine-tuning LLMs', 'LoRA', 'OpenAI API', 'Claude API', 'CodeLlama', 'Hugging Face'],
+    skills: ['Fine-tuning LLMs', 'LoRA', 'Claude Code', 'OpenAI Codex', 'Webhooks'],
   },
   {
     category: 'Herramientas & Plataformas',
@@ -27,7 +27,6 @@ export const skills: SkillCategory[] = [
       'Git',
       'Docker',
       'Linux',
-      'AWS S3',
       'Cloudflare R2',
       'MES Systems',
       'AOI / AXI',

@@ -2,7 +2,7 @@ import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
 import { Menu, Moon, Sun, Terminal } from 'lucide-react'
 import { Button } from '@/components/ui/button'
-import { Sheet, SheetContent, SheetTrigger } from '@/components/ui/sheet'
+import { Sheet, SheetClose, SheetContent, SheetTitle, SheetTrigger } from '@/components/ui/sheet'
 
 const navItems = [
   { label: 'sobre mí', href: '#sobre-mi' },
@@ -58,6 +58,7 @@ export function Navbar({ theme, onToggleTheme }: NavbarProps) {
             variant="ghost"
             size="icon"
             onClick={onToggleTheme}
+            aria-label={theme === 'dark' ? 'Activar tema claro' : 'Activar tema oscuro'}
             className="text-muted-foreground hover:text-foreground"
           >
             {theme === 'dark' ? <Sun className="w-4 h-4" /> : <Moon className="w-4 h-4" />}
@@ -65,20 +66,20 @@ export function Navbar({ theme, onToggleTheme }: NavbarProps) {
 
           <Sheet>
             <SheetTrigger asChild>
-              <Button variant="ghost" size="icon" className="md:hidden">
+              <Button variant="ghost" size="icon" className="md:hidden" aria-label="Abrir menú de navegación">
                 <Menu className="w-5 h-5" />
               </Button>
             </SheetTrigger>
             <SheetContent>
+              <SheetTitle className="font-mono">Navegación</SheetTitle>
               <nav className="flex flex-col gap-6 mt-10">
                 {navItems.map((item) => (
-                  <a
-                    key={item.label}
+                  <SheetClose asChild key={item.label}><a
                     href={item.href}
-                    className="font-mono text-sm hover:text-emerald-400 transition-colors"
+                    className="py-2 font-mono text-sm hover:text-emerald-400 transition-colors"
                   >
                     {item.label}
-                  </a>
+                  </a></SheetClose>
                 ))}
               </nav>
             </SheetContent>
